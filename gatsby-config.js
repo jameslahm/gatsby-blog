@@ -22,5 +22,13 @@ module.exports = {
         pathToConfigModule: `src/utils/typography`,
       },
     },
+    {
+      resolve: `gatsby-plugin-mdx`,
+      options: {
+        defaultLayouts: {
+          default: `${__dirname}/src/components/layout.js`,
+        },
+      },
+    },
   ],
 }
